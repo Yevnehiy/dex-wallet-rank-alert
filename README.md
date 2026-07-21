@@ -9,8 +9,8 @@ It watches Binance-Futures-listed tokens for momentum, inspects the underlying D
 ## Live alerts
 
 <p align="center">
-  <img src="screenshots/telegram-alerts-1.png" width="45%" alt="Telegram alerts — chain badges, direction, signal type, entry timeframe">
-  <img src="screenshots/telegram-alerts-2.png" width="45%" alt="Telegram alerts — jump and activity signals across chains">
+  <img src="screenshots/telegram-alerts-1.jpg" width="45%" alt="Telegram alerts — chain badges, direction, signal type, entry timeframe">
+  <img src="screenshots/telegram-alerts-2.jpg" width="45%" alt="Telegram alerts — jump and activity signals across chains">
 </p>
 
 Each alert encodes four things at a glance: the **chain** (coloured badge — 🟦 Base, 🔷 Ethereum, 🟨 BSC, 🟪 Solana), the **direction** (🟢 buy / 🔴 sell), the **detection type** (🚀 jump / 📈 step-up / 🔔 activity), and **how the token entered watch** (⚡ 5-minute / 🕒 30-minute / 🗓 24-hour momentum board). Alerts also reconcile the executing wallet against the trade receipt to show the *true token holder* when it differs from the operator address, and report the wallet's remaining balance in USD.
