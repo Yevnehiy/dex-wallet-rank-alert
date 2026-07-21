@@ -1,0 +1,23 @@
+name = "dex-whale-alert"
+main = "index.js"
+compatibility_date = "2024-09-01"
+
+# Detection runs on a dedicated VPS (scripts/scanner.mjs) because GeckoTerminal
+# rate-limits Cloudflare's shared egress IP. This Worker confirms candidates,
+# resolves the backtest, delivers Telegram alerts, and watches the scanner
+# heartbeat — all on the per-minute cron.
+[triggers]
+crons = ["* * * * *"]
+
+[vars]
+FROM_RANK = "0"
+TO_RANK = "50"
+
+[[kv_namespaces]]
+binding = "RANK_STORE"
+id = "<your-kv-namespace-id>"
+
+# Secrets (set via `wrangler secret put` or the Cloudflare dashboard):
+#   TELEGRAM_BOT_TOKEN
+#   TELEGRAM_CHAT_ID
+#   COINGECKO_API_KEY   (only used if USE_PAID_API is enabled)

@@ -1,0 +1,14 @@
+# secrets & credentials — never commit
+.env
+.env.*
+!.env.example
+.dev.vars
+
+# runtime state & logs
+scanner-state.json
+scanner.log
+scanner.log.*
+
+# dependencies & build
+node_modules/
+.wrangler/
