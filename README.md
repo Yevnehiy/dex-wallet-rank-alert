@@ -77,6 +77,8 @@ Buys beat sells across every type; the 5-minute board underperforms (late entry)
 
 `GET /analytics?all=1` on the Worker returns the full breakdown live as JSON.
 
+📄 Full write-up in [`reports/`](reports/) — technical report and one-page summary (PDF).
+
 ---
 
 ## Tech stack
